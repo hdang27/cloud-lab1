@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lab 01 - My First Cloud Website deployed on GitHub Pages for Introduction to Cloud Computing">
+  <title>My First Cloud Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Header & Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#home" class="brand">
+        <div class="brand-icon">&#9729;</div>
+        <span class="brand-title">My First Cloud Website</span>
+      </a>
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#cloud-computing" class="nav-link">Cloud Computing</a>
+        <a href="#cloud-services" class="nav-link">Cloud Services</a>
+        <a href="#deployment" class="nav-link">Deployment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>&#9889; Lab 01 &bull; Option B: GitHub Pages</span>
+          </div>
+          <h1>Deploy Your First Static Website to the <span>Cloud</span></h1>
+          <p class="hero-subtitle">
+            A responsive, cloud-hosted static web application demonstrating cloud deployment fundamentals, service models (IaaS, PaaS, SaaS), and public HTTPS accessibility.
+          </p>
+          <div class="hero-actions">
+            <a href="#deployment" class="btn btn-primary">View Deployment Info</a>
+            <a href="#cloud-services" class="btn btn-outline">Explore Cloud Models</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="assets/cloud.svg" alt="Cloud Computing Architecture Illustration" class="hero-image" width="420" height="260">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: About Me -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Student and course identification details</p>
+        </div>
+
+        <div class="about-card">
+          <div class="profile-avatar">
+            <div class="avatar-circle">
+              <!-- Placeholder avatar initial or photo -->
+              &#128100;
+            </div>
+            <div class="profile-status">
+              <span class="status-dot"></span> Active Student
+            </div>
+          </div>
+
+          <div class="profile-details">
+            <div class="student-info-list">
+              <div class="info-item">
+                <div class="info-label">Student Full Name</div>
+                <div class="info-value">
+                  Lê Hải Đăng
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-label">Student ID (MSSV)</div>
+                <div class="info-value">
+                  24110087
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-label">Course Name</div>
+                <div class="info-value">Introduction to Cloud Computing</div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-label">Instructor / Lecturer</div>
+                <div class="info-value">Truong Thi Ngoc Phuong</div>
+              </div>
+            </div>
+
+            <p class="about-bio">
+              Welcome to my first cloud computing lab project. I am an Information Technology student passionate about software engineering, scalable cloud infrastructure, and modern web application development. This portfolio project showcases my hands-on practice deploying static websites to public cloud environments with secure HTTPS delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Cloud Computing Definition -->
+    <section id="cloud-computing">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What is Cloud Computing?</h2>
+          <p class="section-subtitle">Core concepts and modern infrastructure paradigms</p>
+        </div>
+
+        <div class="cloud-intro-card">
+          <p class="cloud-intro-text">
+            Cloud computing is the on-demand delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet with flexible pay-as-you-go pricing. Rather than purchasing, configuring, and managing costly physical servers and on-premises data centers, organizations and developers can rapidly access technology resources on demand from cloud service providers such as AWS, Microsoft Azure, and Google Cloud. This paradigm provides fundamental benefits, including rapid elasticity, near-instant global deployment, high availability, and significant cost savings. By abstracting the complexity of underlying hardware infrastructure, cloud computing empowers software engineers and businesses to focus their efforts entirely on building innovative applications and delivering business value.
+          </p>
+
+          <div class="key-benefits">
+            <div class="benefit-card">
+              <div class="benefit-icon">&#128640;</div>
+              <div class="benefit-title">On-Demand Self-Service</div>
+              <div class="benefit-desc">Provision server instances and storage instantly without human interaction from providers.</div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">&#127758;</div>
+              <div class="benefit-title">Broad Network Access</div>
+              <div class="benefit-desc">Access services over standard internet protocols from laptops, workstations, or mobile devices anywhere.</div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">&#128200;</div>
+              <div class="benefit-title">Rapid Elasticity</div>
+              <div class="benefit-desc">Scale capacity up or down automatically in response to dynamic spikes in user traffic.</div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">&#128176;</div>
+              <div class="benefit-title">Measured Service</div>
+              <div class="benefit-desc">Pay strictly for resources utilized (compute time, bandwidth, storage) with zero wasted overhead.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Cloud Services (IaaS, PaaS, SaaS) -->
+    <section id="cloud-services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Cloud Service Models</h2>
+          <p class="section-subtitle">Understanding IaaS, PaaS, and SaaS with real-world examples</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- IaaS Card -->
+          <article class="service-card">
+            <div class="service-header">
+              <span class="service-badge badge-iaas">Infrastructure</span>
+              <span style="font-size: 1.5rem;">&#128421;</span>
+            </div>
+            <h3 class="service-title">IaaS</h3>
+            <p style="font-weight: 600; color: var(--text-muted); font-size: 0.85rem; margin-top: -0.5rem; margin-bottom: 0.75rem;">Infrastructure as a Service</p>
+            <p class="service-desc">
+              IaaS delivers fundamental compute, storage, and networking resources on demand over the cloud. The provider owns and manages the physical data center hardware and virtualization hypervisor, while users maintain full administrative control over the operating system, installed runtime environments, middleware, and applications.
+            </p>
+            <div class="service-example-box">
+              <div class="example-label">Real-World Example</div>
+              <div class="example-name">Amazon EC2 (Elastic Compute Cloud)</div>
+              <div class="example-detail">Provides resizable virtual servers (instances) allowing full OS root access and custom network configuration.</div>
+            </div>
+          </article>
+
+          <!-- PaaS Card -->
+          <article class="service-card">
+            <div class="service-header">
+              <span class="service-badge badge-paas">Platform</span>
+              <span style="font-size: 1.5rem;">&#9881;</span>
+            </div>
+            <h3 class="service-title">PaaS</h3>
+            <p style="font-weight: 600; color: var(--text-muted); font-size: 0.85rem; margin-top: -0.5rem; margin-bottom: 0.75rem;">Platform as a Service</p>
+            <p class="service-desc">
+              PaaS provides an integrated hardware and software environment for developing, executing, and managing web applications. Cloud providers handle OS updates, runtime patch management, scaling, and load balancing, freeing developers to write code and deploy applications without infrastructure headaches.
+            </p>
+            <div class="service-example-box">
+              <div class="example-label">Real-World Example</div>
+              <div class="example-name">AWS Elastic Beanstalk / Heroku</div>
+              <div class="example-detail">Developers simply upload application source code; the platform handles auto-scaling, monitoring, and provisioning automatically.</div>
+            </div>
+          </article>
+
+          <!-- SaaS Card -->
+          <article class="service-card">
+            <div class="service-header">
+              <span class="service-badge badge-saas">Software</span>
+              <span style="font-size: 1.5rem;">&#128187;</span>
+            </div>
+            <h3 class="service-title">SaaS</h3>
+            <p style="font-weight: 600; color: var(--text-muted); font-size: 0.85rem; margin-top: -0.5rem; margin-bottom: 0.75rem;">Software as a Service</p>
+            <p class="service-desc">
+              SaaS delivers complete, ready-to-use software applications over the internet to end users, usually accessed through a web browser or thin client. The service provider manages every tier of the stack—from infrastructure and operating systems down to application updates, backups, and security.
+            </p>
+            <div class="service-example-box">
+              <div class="example-label">Real-World Example</div>
+              <div class="example-name">Google Workspace (Docs, Drive, Gmail)</div>
+              <div class="example-detail">Users collaborate on documents in real time directly from their browsers without installing or maintaining server software.</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Deployment Information -->
+    <section id="deployment">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Deployment Information</h2>
+          <p class="section-subtitle">Live hosting details, repository, and cloud infrastructure</p>
+        </div>
+
+        <div class="deployment-card">
+          <div class="deployment-status-bar">
+            <div class="status-left">
+              <span class="status-indicator"></span>
+              <div>
+                <div class="status-heading">Hosting Platform: Option B — GitHub Pages</div>
+                <div class="status-sub">Global CDN &bull; Automated Deployment &bull; HTTPS Enforced</div>
+              </div>
+            </div>
+            <div>
+              <span style="background: rgba(255,255,255,0.15); padding: 0.35rem 0.8rem; border-radius: 6px; font-size: 0.85rem; font-family: monospace;">SSL/TLS: TLSv1.3 Active</span>
+            </div>
+          </div>
+
+          <div class="deployment-details-grid">
+            <div class="deploy-info-box">
+              <h4>Deployment Architecture</h4>
+              <p>
+                Static website assets (HTML, CSS, SVG) are stored in the <code>main</code> branch of a public GitHub repository. GitHub Pages serves these files directly through its high-performance global Content Delivery Network (Fastly CDN) with automated SSL/TLS certificate issuance.
+              </p>
+            </div>
+
+            <div class="deploy-info-box">
+              <h4>Source Code Repository</h4>
+              <p>
+                <strong>GitHub Repo:</strong><br>
+                <a href="https://github.com/hdang27/cloud-lab1" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-family: monospace; word-break: break-all;">
+                  https://github.com/hdang27/cloud-lab1
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="deploy-url-box">
+            <div class="deploy-url-label">Public HTTPS Live URL</div>
+            <a href="https://hdang27.github.io/cloud-lab1/" target="_blank" rel="noopener noreferrer" class="deploy-url-link">
+              https://hdang27.github.io/cloud-lab1/
+            </a>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.6rem;">
+              Accessible globally via web browsers and incognito windows without requiring authentication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 <strong>My First Cloud Website</strong> &bull; Introduction to Cloud Computing &bull; Lab 01</p>
+      <p class="footer-sub">Designed and built for individual academic lab submission &bull; Option B: GitHub Pages</p>
+    </div>
+  </footer>
+
+</body>
+</html>

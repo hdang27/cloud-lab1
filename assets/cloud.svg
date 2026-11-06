@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#e0f2fe" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" rx="24" fill="url(#skyGrad)"/>
+
+  <!-- Background decorative particles / circuit grid -->
+  <g stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5">
+    <line x1="100" y1="50" x2="100" y2="450" stroke-dasharray="4 4"/>
+    <line x1="250" y1="50" x2="250" y2="450" stroke-dasharray="4 4"/>
+    <line x1="400" y1="50" x2="400" y2="450" stroke-dasharray="4 4"/>
+    <line x1="550" y1="50" x2="550" y2="450" stroke-dasharray="4 4"/>
+    <line x1="700" y1="50" x2="700" y2="450" stroke-dasharray="4 4"/>
+    <line x1="50" y1="120" x2="750" y2="120" stroke-dasharray="4 4"/>
+    <line x1="50" y1="250" x2="750" y2="250" stroke-dasharray="4 4"/>
+    <line x1="50" y1="380" x2="750" y2="380" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Network Connection lines -->
+  <g stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" opacity="0.75">
+    <path d="M 400 230 L 200 370" stroke-dasharray="6 6"/>
+    <path d="M 400 230 L 400 370" stroke-dasharray="6 6"/>
+    <path d="M 400 230 L 600 370" stroke-dasharray="6 6"/>
+  </g>
+
+  <!-- Main Cloud Shape -->
+  <g filter="url(#shadow)">
+    <path d="M 330 140 
+             A 65 65 0 0 1 470 140 
+             A 55 55 0 0 1 540 190 
+             A 50 50 0 0 1 510 270 
+             L 290 270 
+             A 50 50 0 0 1 260 190 
+             A 60 60 0 0 1 330 140 Z" 
+          fill="url(#cloudGrad)"/>
+    <!-- Cloud Core Glow Symbol -->
+    <circle cx="400" cy="205" r="32" fill="#0284c7" fill-opacity="0.15"/>
+    <path d="M 390 195 L 400 185 L 410 195 M 400 187 L 400 220" stroke="#0284c7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 385 212 L 385 220 L 415 220 L 415 212" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Server Card 1: IaaS (Compute/Storage) -->
+  <g transform="translate(130, 340)" filter="url(#shadow)">
+    <rect width="140" height="90" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="12" y="14" width="116" height="18" rx="4" fill="#eff6ff"/>
+    <circle cx="24" cy="23" r="3.5" fill="#22c55e"/>
+    <circle cx="35" cy="23" r="3.5" fill="#e2e8f0"/>
+    <line x1="50" y1="23" x2="115" y2="23" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <rect x="12" y="38" width="116" height="18" rx="4" fill="#eff6ff"/>
+    <circle cx="24" cy="47" r="3.5" fill="#22c55e"/>
+    <circle cx="35" cy="47" r="3.5" fill="#e2e8f0"/>
+    <line x1="50" y1="47" x2="95" y2="47" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <text x="70" y="78" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#1e293b">IaaS • Compute</text>
+  </g>
+
+  <!-- Server Card 2: PaaS (Platform / Code) -->
+  <g transform="translate(330, 340)" filter="url(#shadow)">
+    <rect width="140" height="90" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="70" cy="38" r="22" fill="#f0fdf4"/>
+    <path d="M 62 38 L 67 33 M 62 38 L 67 43 M 78 38 L 73 33 M 78 38 L 73 43" stroke="#16a34a" stroke-width="2" stroke-linecap="round"/>
+    <text x="70" y="78" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#1e293b">PaaS • Platform</text>
+  </g>
+
+  <!-- Server Card 3: SaaS (Application / End User) -->
+  <g transform="translate(530, 340)" filter="url(#shadow)">
+    <rect width="140" height="90" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="70" cy="38" r="22" fill="#fdf2f8"/>
+    <rect x="58" y="28" width="24" height="18" rx="3" fill="none" stroke="#db2777" stroke-width="2"/>
+    <line x1="64" y1="50" x2="76" y2="50" stroke="#db2777" stroke-width="2" stroke-linecap="round"/>
+    <line x1="70" y1="46" x2="70" y2="50" stroke="#db2777" stroke-width="2"/>
+    <text x="70" y="78" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#1e293b">SaaS • Software</text>
+  </g>
+
+  <!-- Data Pulse Circles -->
+  <circle cx="200" cy="370" r="5" fill="#38bdf8"/>
+  <circle cx="400" cy="370" r="5" fill="#38bdf8"/>
+  <circle cx="600" cy="370" r="5" fill="#38bdf8"/>
+  <circle cx="400" cy="230" r="6" fill="#38bdf8"/>
+
+</svg>
